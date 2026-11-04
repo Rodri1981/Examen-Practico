@@ -1,0 +1,14 @@
+$listaProcesos = Get-Process
+$totalProcesos = $listaProcesos.Count
+
+[int]$limite = Read-Host "Introduce un numero entero limite"
+
+if (($totalProcesos -gt $limite) -and ($totalProcesos -lt 500)) {
+    Write-Host "¡Condicion cumplida! La cantidad total de procesos ($totalProcesos) es mayor a $limite y menor a 500." -ForegroundColor Green
+} else {
+    Write-Host "La condicion NO se cumple. Procesos actuales: $totalProcesos (Limite ingresado: $limite)." -ForegroundColor Yellow
+}
+
+Write-Host "---"
+Write-Host "Version de PowerShell actual:" -ForegroundColor Cyan
+$PSVersionTable.PSVersion
