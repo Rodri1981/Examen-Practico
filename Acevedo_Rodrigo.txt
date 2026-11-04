@@ -12,3 +12,5 @@ if (($totalProcesos -gt $limite) -and ($totalProcesos -lt 500)) {
 Write-Host "---"
 Write-Host "Version de PowerShell actual:" -ForegroundColor Cyan
 $PSVersionTable.PSVersion
+
+https://github.com/Rodri1981/Examen-Practico.git
